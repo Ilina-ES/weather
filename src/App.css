@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: -webkit-linear-gradient(124deg, #361fad, #5309a5, #7c0d93, #640a9c, #5653c2);
+  background: linear-gradient(124deg, #361fad, #5309a5, #7c0d93, #640a9c, #5653c2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  max-height: 98vh;
+  background: #2a6bb1;
+  box-shadow: 0px 2px 80px -20px rgba(0, 0, 0, 0, 5);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.info {
+  height: 55vh;
+  background: url('./img/poligon.jpeg') center center no-repeat;
+  background-size: cover;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  color: #000;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #113a65;
+  width: 50%;
+  padding-bottom: 4px;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input::placeholder{
+  color: #fff;
+}
+
+.form {
+  height: 55vh;
+  padding-top: 100px;
+  padding-left: 50px;
+}
+
+input {
+  color: #103a65;
+}
+
+button {
+  border: 2px solid #103a65;
+  border-bottom: 4px solid #103a65;
+  padding: 8px 20px;
+  margin: 0px 2px 20px 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #235d9c;
+  color: #fff;
+  outline: none !important;
+}
+
+button:hover {
+  border-bottom: 2px solid #103a65;
+  position: relative;
+  top: 2px;
+}
+
+button:active {
+  border-bottom: 2px solid transparent;
+  border-color: transparent;
+  position: relative;
+  top: 1px;
+}
+
+.info h2 {
+  font-weight: 900;
+  color: #fff;
+}
+
+.info p {
+  color: #e4e4e4;
+  font-weight: 700;
+}
+
+.infoWeath {
+  width: 60%;
+  font-size: 20px;
+  color: #fff;
+}
+
+.error {
+  color: #041f3c;
+  font-weight: bold;
 }
